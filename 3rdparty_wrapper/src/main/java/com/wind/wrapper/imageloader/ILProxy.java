@@ -5,7 +5,7 @@ import android.widget.ImageView;
 
 public class ILProxy extends SimpleImageLoader {
     private IImageLoader loader;
-    public ILProxy(Context context){
+    private ILProxy(Context context){
         loader= GlideWrapper.with(context);
     }
 

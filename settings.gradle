@@ -1,4 +1,9 @@
-include ':app', ':base', ':data', ':domain', ':3rdparty_wrapper'
+include ':app', ':base', ':data', ':domain', ':3rdparty_wrapper', ':login-component'
+
+
+
+include ':login-component'
+project(':login-component').projectDir = new File(rootDir, 'components/login-component')
 
 include ':location'
 project(':location').projectDir = new File(rootDir, 'modules/location')

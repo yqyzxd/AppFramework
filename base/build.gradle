@@ -18,7 +18,7 @@ android {
 }
 
 dependencies {
-   // compile fileTree(dir: 'libs', include: ['*.jar'])
+
     testImplementation 'junit:junit:4.12'
     def baseDependencies = rootProject.ext.baseDependencies
     def androidDependencies = rootProject.ext.androidDependencies
@@ -26,11 +26,10 @@ dependencies {
     api baseDependencies.rxAndroid
     api baseDependencies.mosbymvp
     api baseDependencies.okhttputils
-    //api baseDependencies.fastjson
 
-   // api baseDependencies.appcompat
+
     api androidDependencies.recycler_view
-    //apt baseDependencies.daggerCompilerr //apt is deprecated annotationProcessor instead
+
 
     annotationProcessor baseDependencies.daggerCompiler
     api baseDependencies.dagger
