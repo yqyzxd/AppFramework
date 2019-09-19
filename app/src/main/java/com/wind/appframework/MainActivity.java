@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.launcher.ARouter;
+
 public class MainActivity extends FragmentActivity {
 
     // Used to load the 'native-lib' library on application startup.
@@ -21,6 +23,7 @@ public class MainActivity extends FragmentActivity {
         tv.setText("hello");
 
 
+        ARouter.getInstance().build("/login/activity").navigation();
 
     }
 

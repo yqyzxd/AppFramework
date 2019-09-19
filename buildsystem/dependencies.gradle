@@ -72,28 +72,7 @@ ext {
             umeng_common   : 'com.umeng.sdk:common:latest.integration',
             umeng_analytics: 'com.umeng.sdk:analytics:latest.integration'
     ]
-    presentationDependencies = [
-            daggerCompiler       : "com.google.dagger:dagger-compiler:${daggerVersion}",
-            dagger               : "com.google.dagger:dagger:${daggerVersion}",
-            butterKnife          : "com.jakewharton:butterknife:${butterKnifeVersion}",
 
-            javaxAnnotation      : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
-
-            circleimageview      : "de.hdodenhof:circleimageview:2.0.0",
-
-            rxgalleryfinal       : "cn.finalteam.rxgalleryfinal:library:0.0.3",
-            rxbinding            : "com.jakewharton.rxbinding:rxbinding:${rxbindingVersion}",
-            adapterdelegates     : "com.hannesdorfmann:adapterdelegates3:${adapterdelegateVersion}",
-            eventbus             : "org.greenrobot:eventbus:${eventbusVersion}",
-
-
-            glide_transformations: "jp.wasabeef:glide-transformations:${glideTransformationsVersion}",
-            roundedimageview     : "com.makeramen:roundedimageview:${roundedimageviewVersion}",
-            customactivityoncrash: "cat.ereza:customactivityoncrash:${customactivityoncrashVersion}",
-            multidex             : "com.android.support:multidex:${multidexVersion}",
-            umeng_analytics      : "com.umeng.analytics:analytics:latest.integration"
-
-    ]
     libUmengShareDependencies = [
             fastjson: "com.alibaba:fastjson:${androidFastjsonVersion}",
     ]
@@ -151,7 +130,36 @@ ext {
             dagger                : "com.google.dagger:dagger-android:${daggerVersion}"
     ]
     loginComponentAnnotationProcessors=[
-            dagger_compiler : "com.google.dagger:dagger-compiler:${daggerVersion}"
+            dagger_compiler : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            arouter_compiler       : "com.alibaba:arouter-compiler:${arouterCompilerVersion}"
+
+    ]
+
+
+
+
+    
+    presentationDependencies = [
+            daggerCompiler       : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger               : "com.google.dagger:dagger:${daggerVersion}",
+            butterKnife          : "com.jakewharton:butterknife:${butterKnifeVersion}",
+
+            javaxAnnotation      : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+
+            circleimageview      : "de.hdodenhof:circleimageview:2.0.0",
+
+            rxgalleryfinal       : "cn.finalteam.rxgalleryfinal:library:0.0.3",
+            rxbinding            : "com.jakewharton.rxbinding:rxbinding:${rxbindingVersion}",
+            adapterdelegates     : "com.hannesdorfmann:adapterdelegates3:${adapterdelegateVersion}",
+            eventbus             : "org.greenrobot:eventbus:${eventbusVersion}",
+
+
+            glide_transformations: "jp.wasabeef:glide-transformations:${glideTransformationsVersion}",
+            roundedimageview     : "com.makeramen:roundedimageview:${roundedimageviewVersion}",
+            customactivityoncrash: "cat.ereza:customactivityoncrash:${customactivityoncrashVersion}",
+            multidex             : "com.android.support:multidex:${multidexVersion}",
+            umeng_analytics      : "com.umeng.analytics:analytics:latest.integration"
+
     ]
     presentationTestDependencies = [
             mockito          : "org.mockito:mockito-core:${mockitoVersion}",
