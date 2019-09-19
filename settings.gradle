@@ -1,25 +1,28 @@
 include ':app', ':base', ':data', ':domain', ':3rdparty_wrapper'
 
+include ':login-component'
+project(':login-component').projectDir = new File(rootDir, 'components/login-component')
+
 include ':location'
-project(':location').projectDir = new File(rootDir, 'modules/location')
+project(':location').projectDir = new File(rootDir, 'Libs/location')
 include ':wview'
-project(':wview').projectDir = new File(rootDir, 'modules/wview')
+project(':wview').projectDir = new File(rootDir, 'Libs/wview')
 include ':toastlib'
-project(':toastlib').projectDir = new File(rootDir, 'modules/toastlib')
+project(':toastlib').projectDir = new File(rootDir, 'Libs/toastlib')
 include ':umengsharelib'
-project(':umengsharelib').projectDir = new File(rootDir, 'modules/umengsharelib')
+project(':umengsharelib').projectDir = new File(rootDir, 'Libs/umengsharelib')
 
 include ':coder-annotations'
-project(':coder-annotations').projectDir = new File(rootDir, 'modules/coder-annotations')
+project(':coder-annotations').projectDir = new File(rootDir, 'Libs/coder-annotations')
 include ':coder-compiler'
-project(':coder-compiler').projectDir = new File(rootDir, 'modules/coder-compiler')
+project(':coder-compiler').projectDir = new File(rootDir, 'Libs/coder-compiler')
 include ':aop-annotations'
-project(':aop-annotations').projectDir = new File(rootDir, 'modules/aop-annotations')
+project(':aop-annotations').projectDir = new File(rootDir, 'Libs/aop-annotations')
 include ':aop-runtime'
-project(':aop-runtime').projectDir = new File(rootDir, 'modules/aop-runtime')
+project(':aop-runtime').projectDir = new File(rootDir, 'Libs/aop-runtime')
 include ':aop-plugin'
-project(':aop-plugin').projectDir = new File(rootDir, 'modules/aop-plugin')
+project(':aop-plugin').projectDir = new File(rootDir, 'Libs/aop-plugin')
 
 include ':PullToRefreshLib'
-project(':PullToRefreshLib').projectDir = new File(rootDir, 'modules/PullToRefreshLib')
+project(':PullToRefreshLib').projectDir = new File(rootDir, 'Libs/PullToRefreshLib')
 

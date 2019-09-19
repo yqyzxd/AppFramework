@@ -17,8 +17,7 @@ import com.wind.base.dialog.LoadingDialogHelper;
 import com.wind.toastlib.ToastUtil;
 
 import butterknife.ButterKnife;
-import dagger.android.support.AndroidSupportInjection;
-import icepick.Icepick;
+
 
 /**
  * Created by wind on 16/9/12.
@@ -32,25 +31,25 @@ public abstract class DaggerMvpFragment<V extends MvpView,P extends MvpPresenter
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //  injectDependencies();
+        injectDependencies();
     }
 
     @Override
     public void onAttach(Context context) {
-        AndroidSupportInjection.inject(this);
+       // AndroidSupportInjection.inject(this);
         super.onAttach(context);
     }
 
     @Nullable @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        Icepick.restoreInstanceState(this, savedInstanceState);
+       // Icepick.restoreInstanceState(this, savedInstanceState);
         return inflater.inflate(getLayoutRes(), container, false);
     }
 
     @Override public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Icepick.saveInstanceState(this, outState);
+        //Icepick.saveInstanceState(this, outState);
     }
 
 
@@ -64,7 +63,6 @@ public abstract class DaggerMvpFragment<V extends MvpView,P extends MvpPresenter
     /**
      * 引入dagger.android包不再需要获取到Component
      */
-    @Deprecated
     private void injectDependencies() {
         if (getActivity() instanceof HasComponent){
             mComponent = ((HasComponent<C>) getActivity()).getComponent();
@@ -74,11 +72,11 @@ public abstract class DaggerMvpFragment<V extends MvpView,P extends MvpPresenter
         if (mComponent==null){
             throw new NullPointerException("Component can not be null! you should override createComponent method");
         }
-        //inject();
+        inject();
 
     }
 
-    //protected abstract void inject(){}
+    protected  abstract void inject();
 
     /**
      * 如果activity不是HasComponent类型，那么fragment需要自己createComponent();

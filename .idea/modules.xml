@@ -4,20 +4,21 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/3rdparty_wrapper/3rdparty_wrapper.iml" filepath="$PROJECT_DIR$/3rdparty_wrapper/3rdparty_wrapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/AppFramework.iml" filepath="$PROJECT_DIR$/AppFramework.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/PullToRefreshLib/PullToRefreshLib.iml" filepath="$PROJECT_DIR$/modules/PullToRefreshLib/PullToRefreshLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/aop-annotations/aop-annotations.iml" filepath="$PROJECT_DIR$/modules/aop-annotations/aop-annotations.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/aop-plugin/aop-plugin.iml" filepath="$PROJECT_DIR$/modules/aop-plugin/aop-plugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/aop-runtime/aop-runtime.iml" filepath="$PROJECT_DIR$/modules/aop-runtime/aop-runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/PullToRefreshLib/Libs-PullToRefreshLib.iml" filepath="$PROJECT_DIR$/Libs/PullToRefreshLib/Libs-PullToRefreshLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/aop-annotations/Libs-aop-annotations.iml" filepath="$PROJECT_DIR$/Libs/aop-annotations/Libs-aop-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/aop-plugin/Libs-aop-plugin.iml" filepath="$PROJECT_DIR$/Libs/aop-plugin/Libs-aop-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/aop-runtime/Libs-aop-runtime.iml" filepath="$PROJECT_DIR$/Libs/aop-runtime/Libs-aop-runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/coder-annotations/Libs-coder-annotations.iml" filepath="$PROJECT_DIR$/Libs/coder-annotations/Libs-coder-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/coder-compiler/Libs-coder-compiler.iml" filepath="$PROJECT_DIR$/Libs/coder-compiler/Libs-coder-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/location/Libs-location.iml" filepath="$PROJECT_DIR$/Libs/location/Libs-location.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/toastlib/Libs-toastlib.iml" filepath="$PROJECT_DIR$/Libs/toastlib/Libs-toastlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/umengsharelib/Libs-umengsharelib.iml" filepath="$PROJECT_DIR$/Libs/umengsharelib/Libs-umengsharelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libs/wview/Libs-wview.iml" filepath="$PROJECT_DIR$/Libs/wview/Libs-wview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/coder-annotations/coder-annotations.iml" filepath="$PROJECT_DIR$/modules/coder-annotations/coder-annotations.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/coder-compiler/coder-compiler.iml" filepath="$PROJECT_DIR$/modules/coder-compiler/coder-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/domain/domain.iml" filepath="$PROJECT_DIR$/domain/domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/location/location.iml" filepath="$PROJECT_DIR$/modules/location/location.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/toastlib/toastlib.iml" filepath="$PROJECT_DIR$/modules/toastlib/toastlib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/umengsharelib/umengsharelib.iml" filepath="$PROJECT_DIR$/modules/umengsharelib/umengsharelib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/wview/wview.iml" filepath="$PROJECT_DIR$/modules/wview/wview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/components/login-component/login-component.iml" filepath="$PROJECT_DIR$/components/login-component/login-component.iml" />
     </modules>
   </component>
 </project>

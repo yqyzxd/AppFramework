@@ -1,0 +1,71 @@
+if(!component_login_runAlone.toBoolean()){
+    apply plugin: 'com.android.library'
+}else{
+    apply plugin: 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.1"
+
+
+    defaultConfig {
+        if(component_login_runAlone.toBoolean()) {
+            applicationId "com.wind.component.login"
+            multiDexEnabled true
+        }
+
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            if (!component_login_runAlone.toBoolean()) {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    // release 时 debug 目录下文件不需要合并到主工程
+                    exclude '**/debug/**'
+                }
+
+            } else {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            }
+        }
+    }
+
+
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(path:":base")
+    def loginComponentAnnotationProcessors= rootProject.ext.loginComponentAnnotationProcessors
+    loginComponentAnnotationProcessors.each { k, v ->
+        annotationProcessor v
+    }
+    def compileOnlyDependencies= rootProject.ext.compileOnlyDependencies
+    compileOnlyDependencies.each { k, v ->
+        compileOnly v
+    }
+    annotationProcessor project(path:':coder-compiler')
+    testImplementation 'junit:junit:4.12'
+
+}

@@ -1,16 +1,10 @@
 package com.wind.appframework;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
+import android.support.v4.app.FragmentActivity;
 import android.widget.TextView;
 
-import com.wind.aop.annotations.StatisticsAnnotation;
-import com.wind.appframework.login.LoginActivity;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends FragmentActivity {
 
     // Used to load the 'native-lib' library on application startup.
    /* static {
@@ -27,24 +21,13 @@ public class MainActivity extends AppCompatActivity {
         tv.setText("hello");
 
 
-        tv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                click();
-            }
-        });
 
-        startActivity(new Intent(this, LoginActivity.class));
     }
 
-    @StatisticsAnnotation("login")
+   /* @StatisticsAnnotation("login")
     public void click() {
         Log.e("MainActivity","click");
-    }
+    }*/
 
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
-    public native String stringFromJNI();
+
 }

@@ -28,6 +28,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     def androidDependencies = rootProject.ext.androidDependencies
     implementation androidDependencies.glide
+    implementation androidDependencies.appcompat
     testImplementation 'junit:junit:4.12'
 
 }

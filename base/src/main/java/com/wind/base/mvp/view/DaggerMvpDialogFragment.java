@@ -9,7 +9,7 @@ import com.hannesdorfmann.mosby.mvp.MvpView;
 import com.wind.base.di.BaseMvpComponent;
 import com.wind.base.di.HasComponent;
 
-import icepick.Icepick;
+
 
 /**
  * Created by wind on 16/9/12.
@@ -33,7 +33,7 @@ public abstract class DaggerMvpDialogFragment<V extends MvpView, P extends MvpPr
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Icepick.saveInstanceState(this, outState);
+      //  Icepick.saveInstanceState(this, outState);
     }
 
 

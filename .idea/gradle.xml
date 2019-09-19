@@ -9,20 +9,21 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/3rdparty_wrapper" />
+            <option value="$PROJECT_DIR$/Libs/PullToRefreshLib" />
+            <option value="$PROJECT_DIR$/Libs/aop-annotations" />
+            <option value="$PROJECT_DIR$/Libs/aop-plugin" />
+            <option value="$PROJECT_DIR$/Libs/aop-runtime" />
+            <option value="$PROJECT_DIR$/Libs/coder-annotations" />
+            <option value="$PROJECT_DIR$/Libs/coder-compiler" />
+            <option value="$PROJECT_DIR$/Libs/location" />
+            <option value="$PROJECT_DIR$/Libs/toastlib" />
+            <option value="$PROJECT_DIR$/Libs/umengsharelib" />
+            <option value="$PROJECT_DIR$/Libs/wview" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/components/login-component" />
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/domain" />
-            <option value="$PROJECT_DIR$/modules/PullToRefreshLib" />
-            <option value="$PROJECT_DIR$/modules/aop-annotations" />
-            <option value="$PROJECT_DIR$/modules/aop-plugin" />
-            <option value="$PROJECT_DIR$/modules/aop-runtime" />
-            <option value="$PROJECT_DIR$/modules/coder-annotations" />
-            <option value="$PROJECT_DIR$/modules/coder-compiler" />
-            <option value="$PROJECT_DIR$/modules/location" />
-            <option value="$PROJECT_DIR$/modules/toastlib" />
-            <option value="$PROJECT_DIR$/modules/umengsharelib" />
-            <option value="$PROJECT_DIR$/modules/wview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
